@@ -48,3 +48,10 @@ let g:syntastic_enable_highlighting = 1
 let g:syntastic_error_symbol = "✗"
 let g:syntastic_warning_symbol = "⚠"
 let g:syntastic_loc_list_height=2
+
+" Tagbar
+noremap <silent> <F4> :TagbarToggle<CR>
+
+" Airline
+let g:airline_powerline_fonts=0
+let g:airline#extensions#tabline#enabled = 1
