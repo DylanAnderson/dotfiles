@@ -16,6 +16,8 @@ set hlsearch
 set t_Co=256
 set encoding=utf-8
 set laststatus=2
+" strip trailing whitespace
+autocmd BufWritePre * :%s/\s\+$//e
 
 if empty(glob('~/.vim/autoload/plug.vim'))
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
